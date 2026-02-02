@@ -74,6 +74,7 @@ export const SignatureTemplate: React.FC<TemplateProps> = ({ data, brand }) => {
               </div>
               <div style={{ fontSize: '9pt', color: colorSecondary, lineHeight: '1.5' }}>
                 {data.mobile && <span>M: {data.mobile}<br /></span>}
+                {data.office && <span>O: {data.office}<br /></span>}
                 <a href={`mailto:${data.email || 'john.smith@atproperties.com'}`} style={{ color: colorSecondary, textDecoration: 'none' }}>{data.email || 'john.smith@atproperties.com'}</a><br />
                 <a href={config.website} style={{ color: colorSecondary, textDecoration: 'none' }}>{config.website.replace('https://', '')}</a><br />
                 <span>@properties Christie's International Real Estate</span><br />
