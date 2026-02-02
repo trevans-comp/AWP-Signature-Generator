@@ -1,5 +1,6 @@
 
 import React, { useState, useRef, useEffect } from 'react';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 import { Brand, SignatureData } from './types';
 import { BRANDS } from './constants';
 import { SignatureTemplate } from './components/SignatureTemplates';
@@ -226,6 +227,7 @@ const App: React.FC = () => {
           background-size: 16px 16px;
         }
       `}</style>
+      <SpeedInsights />
     </div>
   );
 };
