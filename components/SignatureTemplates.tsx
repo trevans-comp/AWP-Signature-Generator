@@ -69,15 +69,15 @@ export const SignatureTemplate: React.FC<TemplateProps> = ({ data, brand }) => {
             <td width="1" style={{ borderLeft: '1px solid #000' }}></td>
             <td valign="middle" style={{ paddingLeft: '15px' }}>
               <div style={{ marginBottom: '10px' }}>
-                <strong style={{ fontSize: '12pt', color: colorTitle }}>{data.name || 'Your Name'}</strong><br />
-                <span style={{ fontSize: '9pt', color: colorInfo }}>{data.jobTitle || 'Job Title'}</span>
+                <strong style={{ fontSize: '12pt', color: colorTitle }}>{data.name || 'John Smith'}</strong><br />
+                <span style={{ fontSize: '9pt', color: colorInfo }}>{data.jobTitle || 'Real Estate Broker'}</span>
               </div>
               <div style={{ fontSize: '9pt', color: colorSecondary, lineHeight: '1.5' }}>
                 {data.mobile && <span>M: {data.mobile}<br /></span>}
-                <a href={`mailto:${data.email || 'email@atproperties.com'}`} style={{ color: colorSecondary, textDecoration: 'none' }}>{data.email || 'email@atproperties.com'}</a><br />
+                <a href={`mailto:${data.email || 'john.smith@atproperties.com'}`} style={{ color: colorSecondary, textDecoration: 'none' }}>{data.email || 'john.smith@atproperties.com'}</a><br />
                 <a href={config.website} style={{ color: colorSecondary, textDecoration: 'none' }}>{config.website.replace('https://', '')}</a><br />
                 <span>@properties Christie's International Real Estate</span><br />
-                <span>{data.address || 'Office Address'}</span>
+                <span>{data.address || '123 Business Way, City, ST 12345'}</span>
               </div>
               <SocialLinks />
             </td>
@@ -97,18 +97,18 @@ export const SignatureTemplate: React.FC<TemplateProps> = ({ data, brand }) => {
             <td width="1" style={{ borderLeft: '1px solid #cccccc' }}></td>
             <td valign="middle" style={{ paddingLeft: '20px' }}>
               <div style={{ marginBottom: '5px' }}>
-                <strong style={{ fontSize: '12pt', color: colorName }}>{data.name || 'Your Name'}</strong><br />
-                <em style={{ fontSize: '10pt', color: colorTitle }}>{data.jobTitle || 'Job Title'}</em>
+                <strong style={{ fontSize: '12pt', color: colorName }}>{data.name || 'John Smith'}</strong><br />
+                <em style={{ fontSize: '10pt', color: colorTitle }}>{data.jobTitle || 'Real Estate Professional'}</em>
               </div>
               <div style={{ fontSize: '9pt', lineHeight: '1.4' }}>
                 {renderLine('Mobile', data.mobile)}
                 {renderLine('Office', data.office)}
-                <a href={`mailto:${data.email}`} style={{ color: colorInfo, textDecoration: 'none' }}>{data.email || 'email@example.com'}</a><br />
+                <a href={`mailto:${data.email}`} style={{ color: colorInfo, textDecoration: 'none' }}>{data.email || 'john.smith@example.com'}</a><br />
                 <a href={config.website} style={{ color: colorInfo, textDecoration: 'none' }}>{config.website.replace('https://', '')}</a>
               </div>
               <div style={{ fontSize: '8pt', color: colorSecondary, marginTop: '10px' }}>
                 <strong>{brand}</strong><br />
-                {data.address || 'Office Address'}
+                {data.address || '123 Business Way, City, ST 12345'}
               </div>
               <SocialLinks />
             </td>
@@ -128,19 +128,19 @@ export const SignatureTemplate: React.FC<TemplateProps> = ({ data, brand }) => {
             <td width="1" style={{ borderLeft: '1px solid #000' }}></td>
             <td valign="top" style={{ paddingLeft: '20px' }}>
               <div style={{ marginBottom: '8px' }}>
-                <strong style={{ fontSize: '11pt', color: colorName }}>{data.name || 'Your Name'}</strong><br />
-                <span style={{ fontSize: '9pt', color: colorTitle }}>{data.jobTitle || 'Job Title'}</span><br />
+                <strong style={{ fontSize: '11pt', color: colorName }}>{data.name || 'John Smith'}</strong><br />
+                <span style={{ fontSize: '9pt', color: colorTitle }}>{data.jobTitle || 'Associate Broker'}</span><br />
                 {data.license && <span style={{ fontSize: '9pt', color: colorSecondary }}>License: {data.license}</span>}
               </div>
               <div style={{ fontSize: '9pt', color: colorSecondary, lineHeight: '1.5' }}>
                 {renderLine('M', data.mobile, colorSecondary)}
                 {renderLine('O', data.office, colorSecondary)}
-                <a href={`mailto:${data.email}`} style={{ color: colorSecondary, textDecoration: 'none' }}>{data.email || 'email@example.com'}</a><br />
+                <a href={`mailto:${data.email}`} style={{ color: colorSecondary, textDecoration: 'none' }}>{data.email || 'john.smith@example.com'}</a><br />
                 <a href={config.website} style={{ color: colorSecondary, textDecoration: 'underline' }}>{config.website.replace('https://', '')}</a>
               </div>
               <div style={{ fontSize: '9pt', color: colorSecondary, marginTop: '8px' }}>
                 <span>{brand}</span><br />
-                <span>{data.address || 'Office Address'}</span>
+                <span>{data.address || '123 Business Way, City, ST 12345'}</span>
               </div>
               <SocialLinks />
             </td>

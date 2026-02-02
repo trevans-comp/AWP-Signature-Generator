@@ -116,19 +116,19 @@ const App: React.FC = () => {
             </h2>
             
             <div className={`grid grid-cols-1 gap-4 transition-opacity duration-300 ${isComingSoon ? 'opacity-40 pointer-events-none grayscale' : ''}`}>
-              <InputField label="Full Name" name="name" value={formData.name} onChange={handleInputChange} placeholder="e.g. Solimar Frias" disabled={isComingSoon} />
-              <InputField label="Email Address" name="email" type="email" value={formData.email} onChange={handleInputChange} placeholder="solimar@example.com" disabled={isComingSoon} />
-              <InputField label="Job Title" name="jobTitle" value={formData.jobTitle} onChange={handleInputChange} placeholder="Agent Development Manager" disabled={isComingSoon} />
+              <InputField label="Full Name" name="name" value={formData.name} onChange={handleInputChange} placeholder="e.g. John Smith" disabled={isComingSoon} />
+              <InputField label="Email Address" name="email" type="email" value={formData.email} onChange={handleInputChange} placeholder="john.smith@example.com" disabled={isComingSoon} />
+              <InputField label="Job Title" name="jobTitle" value={formData.jobTitle} onChange={handleInputChange} placeholder="Real Estate Broker" disabled={isComingSoon} />
               
               <div className="grid grid-cols-2 gap-4">
-                <InputField label="Mobile Phone" name="mobile" value={formData.mobile} onChange={handleInputChange} placeholder="404.604.0510" disabled={isComingSoon} />
-                <InputField label="Office Phone" name="office" value={formData.office} onChange={handleInputChange} placeholder="404.480.4663" disabled={isComingSoon} />
+                <InputField label="Mobile Phone" name="mobile" value={formData.mobile} onChange={handleInputChange} placeholder="555.555.5555" disabled={isComingSoon} />
+                <InputField label="Office Phone" name="office" value={formData.office} onChange={handleInputChange} placeholder="555.555.1234" disabled={isComingSoon} />
               </div>
 
-              <InputField label="Office Address" name="address" value={formData.address} onChange={handleInputChange} placeholder="3035 Peachtree Rd. Suite 202, Atlanta, GA 30305" disabled={isComingSoon} />
+              <InputField label="Office Address" name="address" value={formData.address} onChange={handleInputChange} placeholder="123 Business Way, Suite 100, City, ST 12345" disabled={isComingSoon} />
               
               {selectedBrand === Brand.ANSLEY && (
-                <InputField label="License Number" name="license" value={formData.license || ''} onChange={handleInputChange} placeholder="415684 (GA)" disabled={isComingSoon} />
+                <InputField label="License Number" name="license" value={formData.license || ''} onChange={handleInputChange} placeholder="123456 (ST)" disabled={isComingSoon} />
               )}
             </div>
           </section>
